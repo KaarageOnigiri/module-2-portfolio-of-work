@@ -56,7 +56,10 @@ header nav a{
     margin-left: 35px;
 }
 
-
+nav a:hover {
+    color: greenyellow;
+    text-decoration: none;
+}
 
 main section {
     padding: 30px;
@@ -82,12 +85,28 @@ ul, a {
     font-size: 20px;
 }
 
+ul li a:hover {
+    color: rgb(180, 88, 88);
+}
+
+ul li a:active {
+    font-size: 98%;
+}
+
 main section article {
-    width: 160%;
+    width: 100%;
 }
 
 main section aside {
     margin-left: 4%;
+}
+
+aside a img:hover {
+    box-shadow: 6px 6px 10px black;
+}
+
+section a img:hover {
+    box-shadow: 6px 6px 10px black;
 }
 
 section-header, section-header h2 {
@@ -130,6 +149,61 @@ footer {
     display: inline;
 }
 
-@media screen {
-    
+@media screen and (max-width: 992px) {
+    header {
+      background: darkolivegreen;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    nav a {
+        text-decoration: none;
+        color: lightblue;
+    }
+
+    body {
+        background-color: darkgrey;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .border-left {
+        padding: 0px;
+        border-left: 0px;
+    }
+
+    aside img {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        color:white;
+        background-color: black;
+    }
+
+    header {
+        background-color: rgb(87, 87, 87);
+    }
 }
