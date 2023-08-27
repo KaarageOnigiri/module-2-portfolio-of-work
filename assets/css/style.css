@@ -56,6 +56,8 @@ header nav a{
     margin-left: 35px;
 }
 
+
+
 main section {
     padding: 30px;
     border-bottom: var(--border-bottom);
@@ -71,12 +73,17 @@ img {
     min-width: 160px;
 }
 
+.application {
+    max-width: 400px;
+}
+
+
 ul, a {
     font-size: 20px;
 }
 
 main section article {
-    width: 60%;
+    width: 160%;
 }
 
 main section aside {
